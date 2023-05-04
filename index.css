@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .cima {
+    width: 100%;
+    height: 70px;
+    background-color: #52B43A;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #dentro {
+    width: 100%;
+    height: 15px;
+    background-color: #1A1A1A;
+    top: 0;
+    position: absolute;
+  }
+  #baixo {
+    width: 100%;
+    height: 200px;
+    background-color: #1A1A1A;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  #efeito {
+    width: 100%;
+    height: 70%;
+    min-height: 200px;
+    background-color: #1A1A1A;
+    position: absolute;
+    mix-blend-mode: hard-light;
+    opacity: 80%;
+    z-index: -1;
+  }
+  
+  #text {
+    position: absolute;
+    color: white;
+    width: 90%;
+    bottom: 70px;
+    left: 60px;
+
+  }
+
+  #cont {
+    max-width: 100%;
+    position: relative;
+    color: white;
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  #img {
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    top: 40px;
+  }
+  
+  .logo {
+    top: 25px;
+    font-size: 25px;
+    position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* card */
+
+  .container {
+    max-width: 100%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    right: 30px;
+    bottom: 10px;
+  }
+  
+  .w1 {
+    border: none;
+    position: relative;
+    margin: 30px;
+    height: 240px;
+    width: 160px;
+    background-color: rgba(82,180,58,0.8);
+    backdrop-filter: blur(0px);
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .w1:hover {
+    transform: scale3d(1.1,1.1, 1);
+  }
+  
+  .conteudo {
+    position: absolute;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .w1:hover .conteudo{
+    transform: translateY(0px);
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  .bru {
+    position: relative;
+    margin: 20px;
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .new:hover .bru {
+    opacity: 0;
+    transition: 0.5s;
+    bottom: 0;
+  }
+
+  .ww {
+    font-size: 50px;
+  }
+
+  .w1:hover .ww {
+    font-size: 0;
+    transition: 0.5s;
+  }
